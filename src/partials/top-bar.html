@@ -1,0 +1,43 @@
+<div class="navbar-fixed">
+  <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="large">
+    <button class="hamburger-icon" type="button" data-toggle="main-nav"></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+  <div class="top-bar stacked-for-medium" id="main-nav">
+
+    <a href="index.html" class="top-bar__title {{#ifpage 'index'}}active{{/ifpage}}">Hotel STAR</a>
+    <div class="top-bar-left">
+      <nav>
+        <ul class="vertical large-horizontal menu" data-responsive-menu="medium-accordion large-dropdown">
+          <li>
+            <a href="rooms.html" class="{{#ifpage 'rooms'}}active{{/ifpage}}">Rooms & Facilities</a>
+          <li>
+            <a href="meetings.html" class="{{#ifpage 'meetings'}}active{{/ifpage}}">Meetings & Events</a>
+          </li>
+          <li>
+            <a href="bar.html" class="{{#ifpage 'bar'}}active{{/ifpage}}">Restaurant & Bar</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="top-bar-right">
+      <ul class="menu">                 
+        <li><a href="#" class="your-bookings"  data-toggle="your-bookings">Check Your Bookings</a>
+          <div class="dropdown-pane bottom" id="your-bookings" data-dropdown>
+            <div class="your-bookings__container">
+
+              {{> your-bookings}}
+              
+            </div>
+          </div>
+        </li>
+        <li><a href="#"><i class="fa fa-phone"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fa fa-map"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+  

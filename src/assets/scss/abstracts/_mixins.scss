@@ -1,0 +1,8 @@
+@mixin subtle-shadow($color) {
+  box-shadow: 0 2px 25px -7px $color,
+              2px 0 25px -7px $color;
+}
+
+@mixin bg-col {
+  background-color: red;
+}

@@ -1,0 +1,59 @@
+.navbar-fixed {
+  @include position-fixed-top();
+}
+
+.top-bar {
+  padding: .75rem 1.5rem;
+  background-color: $cream;
+  border-bottom: 2px solid darken($cream, 20%);
+
+  nav > ul > li {
+    margin-left: rem-calc(10);
+    border-top: 2px solid transparent;
+  }
+  .menu {
+    background-color: $cream;
+    
+    & a:hover {
+      background: darken($cream, 10%);
+    }
+  }
+  &__title {
+    padding: rem-calc(7);
+    background-color: darken($cream, 3%);
+    border-top: 2px solid transparent;
+  }
+}
+.active {
+  background-image: linear-gradient(90deg, darken($cream, 10%), darken($cream, 15%));
+  border-top: 2px solid darken($cream, 20%);
+}
+
+.your-bookings {
+  border-radius: 3px;
+  background-color: $primary-color;
+  color: $white;
+  border: 2px solid transparent;
+  transition: all .2s ease;
+  
+  &:hover {
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    background-color: transparent;
+  }
+}
+
+.title-bar {
+  background-color: $cream;  
+}
+
+.hamburger-icon {
+  @include hamburger($darkest, lighten($darkest, 10%), 1.7rem, 1.4rem, .2rem, 3);
+  @include margin(.5 ,1 ,0.5 ,1);
+  
+}
+
+//----------------- BEFORE JS load bug
+.no-js {@include breakpoint(small only) {.top-bar {display: none;}}
+  @include breakpoint(large) {.title-bar {display: none;}}}
+//------------------BEFORE JS load bug

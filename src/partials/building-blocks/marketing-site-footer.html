@@ -1,0 +1,56 @@
+<footer class="marketing-site-footer marketing">
+  <div class="marketing__container">
+    <div class="marketing__column marketing__column--1">
+      <h4 class="marketing__title marketing__title--title">Hotel STAR</h4>
+      <p>At STAR Hotel, our passion is to connect our guests to the very best of our destinations. From the beaches of Hawaii and Bermuda to the deserts of the United Arab Emirates to the heart of London, our hotels offer guests extraordinary places, created by combining unique architecture and structure, expressive decor and artistry, and magnificent features. Add great service, and the result is an unforgettable guest experience.</p>
+      <ul class="menu marketing__menu">
+        <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="marketing__column">
+       <h4 class="marketing__title">Contact Info</h4>
+      <div class="marketing__info">
+        <i class="fa fa-map" aria-hidden="true"></i>
+        <p>100 W Rincon San Francisco, CA 94015</p>
+      </div>
+      <div class="marketing__info">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p>1 (800) 555-5555</p>
+      </div>
+      <div class="marketing__info">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <p>yetirules@fakeemail.com</p>
+      </div>
+    </div>
+    
+    <div class="marketing__column">
+      <h4 class="marketing__title">Instagram</h4>
+      <div class="instagram__container">
+
+        {{#each instagram.instagram}}
+        <div class="instagram__block">
+          <a href="#"><img src="{{src}}" alt="Photo-{{nr}}" /></a>
+        </div>
+        {{/each}}
+
+      </div>
+    </div>
+  </div>
+  <div class="marketing__bottom">
+    <div class="marketing__rights">
+      <p>&copy; 2017 No rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+<!-- <div class="button-group expanded">
+  {{#each icons.icons}}
+    <button class="button hollow"  type="button">
+      <i class="{{classes}}">
+        <span class="{{#ifpage page}}active{{/ifpage}}">{{title}} font size {{size}}</span>
+      </i>
+    </button>
+  {{/each}}
+</div> -->

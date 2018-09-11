@@ -1,0 +1,30 @@
+instagram:
+  -
+    src: '../assets/img/small/room-small-1.jpg'
+    nr: '1'
+  -
+    src: '../assets/img/small/room-small-2.jpg'
+    nr: '2'
+  -
+    src: '../assets/img/small/room-small-3.jpg'
+    nr: '3'
+  -
+    src: '../assets/img/small/room-small-4.jpg'
+    nr: '4'
+  -
+    src: '../assets/img/small/room-small-5.jpg'
+    nr: '5'
+  -
+    src: '../assets/img/small/room-small-6.jpg'
+    nr: '6'
+  -
+    src: '../assets/img/small/room-small-7.jpg'
+    nr: '7'
+  -
+    src: '../assets/img/small/room-small-8.jpg'
+    nr: '8'
+  -
+    src: '../assets/img/small/room-small-9.jpg'
+    nr: '9'
+
+    

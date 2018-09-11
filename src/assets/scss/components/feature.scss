@@ -1,0 +1,119 @@
+.feature {
+  padding-top: rem-calc(45);
+  
+  @include xy-grid-container;
+  @include xy-grid;
+  @include flex-align(center);
+
+  
+  &__box {
+    margin-bottom: rem-calc(15);
+    border: 5px solid darken($cream, 20%);
+    width: 100%;
+
+    @include position(relative);
+    @include box(rem-calc(200));
+    @include xy-cell();
+    
+    @include breakpoint(medium) {
+      @include xy-cell(1 / 2);
+      height: rem-calc(250);
+    }
+
+    @include breakpoint(large) {
+      @include xy-cell(1 / 3);
+      height: rem-calc(300);
+    }
+
+    &--text {
+      background-image: linear-gradient($cream, darken($cream, 15%), $cream);
+      font-size: 85%;
+      text-align: justify;
+
+      @include padding(1,1,1,1);
+
+      @include breakpoint(medium) {
+        font-size: 90%;
+      }
+
+      @include breakpoint(large) {
+        font-size: 100%;
+      }
+
+      & h3 {
+        display: inline-block;
+        background: rgba($cream, .85);
+        @include font-bold;
+      }
+
+      & span {
+        display: block;
+      }
+    }
+    // bg picture for 3 boxes
+    @for $i from 1 through 3 {
+      &--pic#{$i} {
+        background-image: url(../img/small/hotel-small-#{$i}.jpg);
+        background-size: cover;
+        background-repeat:no-repeat;
+        box-shadow: 0 2px 25px -7px $dark-gray,
+              2px 0 25px -7px $dark-gray;
+
+        
+      }
+    }
+  }
+
+  &__cover {
+    @include position(absolute);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .75s .35s ease;
+    
+    &:hover {
+      background-color: rgba(0,0,0, .35);
+    }
+  }
+  
+  &__btn {
+    border: 2px solid $white;
+    border-radius: 2px;
+    color: $white;
+    overflow: hidden;
+    z-index: 2;
+
+    @include position(relative);
+    @include padding(1, 2, 1, 2);
+    @include text-transform(uppercase);
+    @include font-bold;
+
+    &::before  {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $white;
+      width: 300px;
+      height: 100%;
+      z-index: 1;
+      transform: translateX(-400px) skewX(-45deg);
+      transition: all 1s ease;
+    }
+
+    &:hover {
+      font-size: 105%;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+
+    &:hover::before {
+      transform: translateX(-100px) skewX(-45deg);
+      background-color: rgba($white, .25);
+      
+    }
+  }
+}

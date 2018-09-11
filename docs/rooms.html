@@ -1,0 +1,568 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel STAR</title>
+    <link href="https://fonts.googleapis.com/css?family=Forum|Merienda+One|Patrick+Hand+SC|Schoolbell&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+
+    
+    <div class="navbar-fixed">
+      <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="large">
+        <button class="hamburger-icon" type="button" data-toggle="main-nav"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      <div class="top-bar stacked-for-medium" id="main-nav">
+    
+        <a href="index.html" class="top-bar__title ">Hotel STAR</a>
+        <div class="top-bar-left">
+          <nav>
+            <ul class="vertical large-horizontal menu" data-responsive-menu="medium-accordion large-dropdown">
+              <li>
+                <a href="rooms.html" class="active">Rooms & Facilities</a>
+              <li>
+                <a href="meetings.html" class="">Meetings & Events</a>
+              </li>
+              <li>
+                <a href="bar.html" class="">Restaurant & Bar</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    
+        <div class="top-bar-right">
+          <ul class="menu">                 
+            <li><a href="#" class="your-bookings"  data-toggle="your-bookings">Check Your Bookings</a>
+              <div class="dropdown-pane bottom" id="your-bookings" data-dropdown>
+                <div class="your-bookings__container">
+    
+                  <table class="booking-table">
+                  
+                  </table>
+                  
+                  <div class="desc">
+                    
+                  </div>
+                  <div class="confirm">
+                      <a href="#" class="add" role="button">Confrmm booking</a>
+                      <a href="#" class="remove" role="button">Remove booking</a>
+                      <a href="rooms.html" class="new" role="button">Add new booking</a>
+                  </div>              
+                </div>
+              </div>
+            </li>
+            <li><a href="#"><i class="fa fa-phone"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fa fa-map"></i></a></li>
+          </ul>
+        </div>
+    
+      </div>
+    </div>
+          
+    <div class="hero-full-screen">
+    
+        <header class="hero-header">
+            <span>
+                <h1>enjoy your stay with us</h1>
+                <span>rooms for travellers, families and business</span>
+                <br>
+                <span>Discover our wide range of room facilities</span>
+            </span>
+            
+        </header>
+        
+    
+        <div class="homepage-hero-module">
+          <div class="video-container">
+                <div class="poster poster-rooms"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="booking">
+        
+        <form class="booking__form" id="booking">
+        
+          <div class="booking__container">
+            <label for="month" class="booking__label">Month</label>
+            <span class="booking__display booking__display--month"></span>
+            <select name="" class="input-field" id="month">
+              <option value="month" selected hidden disabled>month</option>
+              <option value="jan">Jan</option>
+              <option value="feb">Feb</option>
+              <option value="mar">Mar</option>
+              <option value="apr">Apr</option>
+              <option value="may">May</option>
+              <option value="fun">Jun</option>
+              <option value="jul">Jul</option>
+              <option value="aug">Aug</option>
+              <option value="sep">Sep</option>
+              <option value="oct">Oct</option>
+              <option value="nov">Nov</option>
+              <option value="dec">Dec</option>
+            </select>
+          </div>
+        
+          <div class="booking__container">
+            <label for="day" class="booking__label">Day</label>
+            <span class="booking__display booking__display--day"></span>
+            <select name="" class="input-field" id="day">
+              <option value="day" selected disabled hidden>day</option>
+            </select>
+          </div>
+        
+          <div class="booking__container">
+            <label for="nights" class="booking__label" id="booking__nights">Nights</label>
+            <span class="booking__display booking__display--nights"></span>
+            <input type="number" class="input-field" id="nights">
+          </div>
+          
+          <div class="booking__container">
+            <label for="stay" class="booking__label">Room</label>
+            <span class="booking__display booking__display--room"></span>
+            <select name="" class="input-field" id="room">
+              <option value="room" selected disabled hidden>room</option>
+              <option value="6">6</option>
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+        
+            </select>
+          </div>
+        
+        
+          <div class="booking__container">
+            <button class="button booking__btn">Check rooms</button>
+          </div>
+        
+        </form>
+    </div>
+    
+    <section class="rooms">
+      
+      <div class="rooms__container">
+      
+        <h2 class="rooms__big card-js">Large rooms (5-6)</h2>
+      
+        <div class="rooms__big card-js rooms__big">
+          <div class="rooms--1">
+            <img src="../assets/img/small/room-small-1.jpg" alt="Hotel Room-big">
+            <span class="rooms__off">Off £<span>29</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>6</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>150</span> per night</span>
+                <p>Only 3 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__big card-js rooms__big">
+          <div class="rooms--2">
+            <img src="../assets/img/small/room-small-2.jpg" alt="Hotel Room-big">
+            <span class="rooms__off">Off £<span>45</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>5</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>130</span> per night</span>
+                <p>Only 5 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__big card-js rooms__big">
+          <div class="rooms--3">
+            <img src="../assets/img/small/room-small-3.jpg" alt="Hotel Room-big">
+            <span class="rooms__off">Off £<span>33</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>6</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>250</span> per night</span>
+                <p>Only 1 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__big card-js rooms__big">
+          <div class="rooms--4">
+            <img src="../assets/img/small/room-small-4.jpg" alt="Hotel Room-big">
+            <span class="rooms__off">Off £<span>35</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>5</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>190</span> per night</span>
+                <p>Only 5 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+      
+        <h2 class="rooms__medium card-js">Medium rooms (3-4)</h2>
+      
+        <div class="rooms__medium card-js rooms__medium">
+          <div class="rooms--1">
+            <img src="../assets/img/small/room-small-5.jpg" alt="Hotel Room-medium">
+            <span class="rooms__off">Off £<span>29</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>4</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>120</span> per night</span>
+                <p>Only 3 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__medium card-js rooms__medium">
+          <div class="rooms--2">
+            <img src="../assets/img/small/room-small-6.jpg" alt="Hotel Room-medium">
+            <span class="rooms__off">Off £<span>25</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>4</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>130</span> per night</span>
+                <p>Only 8 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__medium card-js rooms__medium">
+          <div class="rooms--3">
+            <img src="../assets/img/small/room-small-7.jpg" alt="Hotel Room-medium">
+            <span class="rooms__off">Off £<span>23</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>3</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>90</span> per night</span>
+                <p>Only 11 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__medium card-js rooms__medium">
+          <div class="rooms--4">
+            <img src="../assets/img/small/room-small-8.jpg" alt="Hotel Room-medium">
+            <span class="rooms__off">Off £<span>29</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>3</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>85</span> per night</span>
+                <p>Only 14 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+      
+        <h2 class="rooms__small card-js">Small rooms (1-2)</h2>
+      
+        <div class="rooms__small card-js rooms__small">
+          <div class="rooms--1">
+            <img src="../assets/img/small/room-small-9.jpg" alt="Hotel Room-small">
+            <span class="rooms__off">Off £<span>20</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>1</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>50</span> per night</span>
+                <p>Only 19 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__small card-js rooms__small">
+          <div class="rooms--2">
+            <img src="../assets/img/small/room-small-10.jpg" alt="Hotel Room-small">
+            <span class="rooms__off">Off £<span>15</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>2</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>40</span> per night</span>
+                <p>Only 7 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__small card-js rooms__small">
+          <div class="rooms--3">
+            <img src="../assets/img/small/room-small-11.jpg" alt="Hotel Room-small">
+            <span class="rooms__off">Off £<span>13</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>2</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>60</span> per night</span>
+                <p>Only 1 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+        <div class="rooms__small card-js rooms__small">
+          <div class="rooms--4">
+            <img src="../assets/img/small/room-small-12.jpg" alt="Hotel Room-small">
+            <span class="rooms__off">Off £<span>23</span></span>
+            <div class="rooms__details">
+              <span class="rooms__bed"><span>1</span> bed</span>
+              <div class="rooms__price">
+                <span>£<span>45</span> per night</span>
+                <p>Only 12 rooms left at this price</p>
+              </div>
+            </div>
+            <button class="rooms__book-now">Book Now</button>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+    
+    <section class="facilities">
+      <div class="facilities__container">
+      
+        <h2>Other facilities</h2>
+      
+        <div class="facilities__nav">
+          <ul class="tabs facilities__tabs" data-responsive-accordion-tabs="accordion medium-tabs large-tabs" id="facilities__tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Spa</a></li>
+            <li class="tabs-title"><a href="#panel2">Massage</a></li>
+            <li class="tabs-title"><a href="#panel3">City Breaks</a></li>
+            <li class="tabs-title"><a href="#panel4">Relaxation Area</a></li>
+          </ul>
+        </div>
+        
+        <div class="tabs-content facilities__content" data-tabs-content="facilities__tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <div class="facilities__tab">
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/spa-small-1.jpg" alt="Hotel facility spa">
+                <div class="facilities__details">
+                  <span class="facilities__text">Natural Detox Drinks</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/spa-small-2.jpg" alt="Hotel facility spa 2">
+                <div class="facilities__details">
+                  <span class="facilities__text">Let Us Care About Your Body</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/spa-small-3.jpg" alt="Hotel facility spa 3">
+                <div class="facilities__details">
+                  <span class="facilities__text">naturopathic medicine</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/spa-small-4.jpg" alt="Hotel facility spa 4">
+                <div class="facilities__details">
+                  <span class="facilities__text">New and comfortable equipment</span>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+          <div class="tabs-panel " id="panel2">
+            <div class="facilities__tab">
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/massage-small-1.jpg" alt="Hotel facility massage">
+                <div class="facilities__details">
+                  <span class="facilities__text">Aromatherapy Massage</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/massage-small-2.jpg" alt="Hotel facility massage 2">
+                <div class="facilities__details">
+                  <span class="facilities__text">Hot stone back massage</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/massage-small-3.jpg" alt="Hotel facility massage 3">
+                <div class="facilities__details">
+                  <span class="facilities__text">Thai Massage</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/massage-small-4.jpg" alt="Hotel facility massage 4">
+                <div class="facilities__details">
+                  <span class="facilities__text">Reflexology massage</span>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+          <div class="tabs-panel " id="panel3">
+            <div class="facilities__tab">
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/mountains-small-1.jpg" alt="Hotel facility city">
+                <div class="facilities__details">
+                  <span class="facilities__text">Amazing Snodonia</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/mountains-small-2.jpg" alt="Hotel facility city 2">
+                <div class="facilities__details">
+                  <span class="facilities__text">Beutiful Cornwall</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/mountains-small-3.jpg" alt="Hotel facility city 3">
+                <div class="facilities__details">
+                  <span class="facilities__text">Stunning Devon</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/mountains-small-4.jpg" alt="Hotel facility city 4">
+                <div class="facilities__details">
+                  <span class="facilities__text">incredible Dover</span>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+          <div class="tabs-panel " id="panel4">
+            <div class="facilities__tab">
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/relaxing-small-1.jpg" alt="Hotel facility relaxation">
+                <div class="facilities__details">
+                  <span class="facilities__text">Outside pool 1</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/relaxing-small-2.jpg" alt="Hotel facility relaxation 2">
+                <div class="facilities__details">
+                  <span class="facilities__text">Outside pool 2</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/relaxing-small-3.jpg" alt="Hotel facility relaxation 3">
+                <div class="facilities__details">
+                  <span class="facilities__text">Inside pool</span>
+                </div>
+              </div>
+      
+              <div class="facilities__card">
+                <img src="/assets/img/small/relaxing-small-4.jpg" alt="Hotel facility relaxation 4">
+                <div class="facilities__details">
+                  <span class="facilities__text">spa</span>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+        
+      </div>
+      
+    </section>
+    
+
+
+    <footer class="marketing-site-footer marketing">
+      <div class="marketing__container">
+        <div class="marketing__column marketing__column--1">
+          <h4 class="marketing__title marketing__title--title">Hotel STAR</h4>
+          <p>At STAR Hotel, our passion is to connect our guests to the very best of our destinations. From the beaches of Hawaii and Bermuda to the deserts of the United Arab Emirates to the heart of London, our hotels offer guests extraordinary places, created by combining unique architecture and structure, expressive decor and artistry, and magnificent features. Add great service, and the result is an unforgettable guest experience.</p>
+          <ul class="menu marketing__menu">
+            <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="marketing__column">
+           <h4 class="marketing__title">Contact Info</h4>
+          <div class="marketing__info">
+            <i class="fa fa-map" aria-hidden="true"></i>
+            <p>100 W Rincon San Francisco, CA 94015</p>
+          </div>
+          <div class="marketing__info">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>1 (800) 555-5555</p>
+          </div>
+          <div class="marketing__info">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>yetirules@fakeemail.com</p>
+          </div>
+        </div>
+        
+        <div class="marketing__column">
+          <h4 class="marketing__title">Instagram</h4>
+          <div class="instagram__container">
+    
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-1.jpg" alt="Photo-1" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-2.jpg" alt="Photo-2" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-3.jpg" alt="Photo-3" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-4.jpg" alt="Photo-4" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-5.jpg" alt="Photo-5" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-6.jpg" alt="Photo-6" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-7.jpg" alt="Photo-7" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-8.jpg" alt="Photo-8" /></a>
+            </div>
+            <div class="instagram__block">
+              <a href="#"><img src="../assets/img/small/room-small-9.jpg" alt="Photo-9" /></a>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+      <div class="marketing__bottom">
+        <div class="marketing__rights">
+          <p>&copy; 2017 No rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- <div class="button-group expanded">
+    </div> -->
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

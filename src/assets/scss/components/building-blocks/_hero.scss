@@ -1,0 +1,112 @@
+// // $hero-full-screen-bg: url('https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
+// $hero-full-screen-bg-size: cover;
+// $hero-full-screen-text-color: $white;
+
+.hero-full-screen {
+    height: auto;
+    position: relative;
+    z-index: 0;
+    
+    .hero-header {
+        position: absolute;
+        top: 0;
+        left:50%;
+        height: 100%;
+        width: 100%;
+        z-index: 20;
+        transform: translateX(-50%);
+        @include xy-grid;
+        @include xy-grid-container;	
+        
+
+        span {
+						align-self: center;
+						
+            h1 {
+							margin-bottom: 0;
+							background: rgba($cream, .75);
+
+                @include text-transform(uppercase);
+								@include padding(null,1,null,1);
+
+            }
+            span {
+                margin-top: rem-calc(-8);
+                background: rgba($cream, .75);
+								display: inline-block;
+								margin-top: rem-calc(-1);
+								
+                @include padding(null,1,null,1);
+								@include text-transform(capitalize);
+								@include breakpoint(small only) {
+									font-size: rem-calc(20);
+								} 
+								@include breakpoint(medium) {
+									font-size: rem-calc(26);
+								} 
+            }
+        }
+    }
+
+    .homepage-hero-module {
+			.video-container {
+				position: relative;
+				bottom: 0%;
+				left: 0%;
+				height: 50vh;
+				width: 100%;
+				overflow: hidden;
+				
+				@include breakpoint(medium) {
+					height: 75vh;
+
+				}
+				
+			.video-content {
+				
+				display: none;
+				@include breakpoint(medium) {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+					display: block;
+				}
+			}
+			.poster {
+				background-size: cover;
+				background-position: center center;
+				height: 100%;
+				width: 100%;
+
+				&-index {
+					background-image: url("../img/small/Relaxing-small-2.jpg");
+
+					// @include breakpoint(medium) {
+					// 	background-image: url("../img/big/Relaxing-big-2.jpg");
+					// }
+				}
+				&-rooms {
+					background-image: url("../img/small/room-small-4.jpg");
+
+					// @include breakpoint(medium) {
+					// 	background-image: url("../img/big/room-big-4.jpg");
+					// }
+				}
+				&-meetings {
+					background-image: url("../img/small/conference-small-3.jpg");
+
+					// @include breakpoint(medium) {
+					// 	background-image: url("../img/big/room-big-3.jpg");
+					// }
+				}
+				&-bar {
+					background-image: url("../img/small/bar-small-2.jpg");
+
+					// @include breakpoint(medium) {
+					// 	background-image: url("../img/big/bar-big-3.jpg");
+					// }
+				}
+			}
+		}
+	}
+}

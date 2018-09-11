@@ -1,0 +1,85 @@
+banquets:
+  -
+    src: '../assets/img/small/banquet-small-1.jpg'
+    purpose: 'Meetings'
+    size: '40'
+  -
+    src: '../assets/img/small/banquet-small-2.jpg'
+    purpose: 'Corporate Lunches'
+    size: '80'
+  -
+    src: '../assets/img/small/banquet-small-3.jpg'
+    purpose: 'Private Dinners'
+    size: '60'
+  -
+    src: '../assets/img/small/banquet-small-4.jpg'
+    purpose: 'Coctail Parties'
+    size: '90'
+
+casino:
+  -
+    src: '../assets/img/small/Casino-small-1.jpg'
+    purpose: 'Slot Machines'
+    size: '120'
+  -
+    src: '../assets/img/small/Casino-small-2.jpg'
+    purpose: 'Roulette'
+    size: '120'
+  -
+    src: '../assets/img/small/Casino-small-3.jpg'
+    purpose: 'European Table Games'
+    size: '120'
+  -
+    src: '../assets/img/small/Casino-small-4.jpg'
+    purpose: 'American Table Games'
+    size: '110'
+
+conferences:
+  -
+    src: '../assets/img/small/conference-small-1.jpg'
+    purpose: 'Meeting Space, Meals, Catering, Audio-Visual'
+    size: '20'
+  -
+    src: '../assets/img/small/conference-small-2.jpg'
+    purpose: 'Meeting Space, Meals, Catering, Audio-Visual'
+    size: '25'
+  -
+    src: '../assets/img/small/conference-small-3.jpg'
+    purpose: 'Meeting Space, Meals, Catering, Audio-Visual'
+    size: '15'
+  -
+    src: '../assets/img/small/conference-small-4.jpg'
+    purpose: 'Meeting Space, Meals, Catering, Audio-Visual'
+    size: '30'
+
+exhibitions:
+  -
+    src: '../assets/img/small/exhibition-small-1.jpg'
+    purpose: 'Photographies'
+  -
+    src: '../assets/img/small/exhibition-small-2.jpg'
+    purpose: 'Nature'
+  -
+    src: '../assets/img/small/exhibition-small-3.jpg'
+    purpose: 'Paintings'
+  -
+    src: '../assets/img/small/exhibition-small-4.jpg'
+    purpose: 'Automotive'
+
+weddings:
+  -
+    src: '../assets/img/small/wedding-small-1.jpg'
+    purpose: 'Catering, Service, Wedding Decorations, Hotel Rooms and Music'
+    size: '20'
+  -
+    src: '../assets/img/small/wedding-small-2.jpg'
+    purpose: 'Catering, Service, Wedding Decorations, Hotel Rooms and Music'
+    size: '250'
+  -
+    src: '../assets/img/small/wedding-small-3.jpg'
+    purpose: 'Catering, Service, Wedding Decorations, Hotel Rooms and Music'
+    size: '150'
+  -
+    src: '../assets/img/small/wedding-small-4.jpg'
+    purpose: 'Catering, Service, Wedding Decorations, Hotel Rooms and Music'
+    size: '30'

@@ -1,0 +1,105 @@
+.booking {
+  padding-bottom: 25rem;
+  position: relative;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  max-width: rem-calc(560);
+  height: 100%;
+  background-color: $cream;
+  border: 5px solid darken($cream, 20%);
+  
+  box-shadow: 0 2px 25px -7px $dark-gray,
+              2px 0 25px -7px $dark-gray;
+  
+  
+  @include breakpoint(medium) {
+    max-width: rem-calc(760);
+    margin: rem-calc(-75) auto 0;
+    height: rem-calc(160);
+  }
+
+
+  &__form {
+    @include xy-grid();
+    @include xy-cell();
+
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__container {
+    height: auto;
+    padding: 8px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    
+    @include xy-cell(1 of 3);
+    
+    @include breakpoint(small only) {
+      &:last-child {
+        @include xy-cell(2 of 3);
+      }
+      & button {
+        margin-top: auto;
+        margin-bottom: 0;
+      }
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(2 of 10);
+    }
+  }
+  
+  &__label {
+    font-size: rem-calc(14);
+    
+  }
+
+  .input-field {
+    width: 100%;
+    font-size: rem-calc(16);
+    border: 1px solid $light-gray;
+    margin: 0;
+    margin-bottom: auto;
+    background-color: darken($cream, 20%);
+
+    
+    @include border-radius(4%);
+    @include breakpoint(medium) {
+      width: rem-calc(80);
+      font-size: rem-calc(14);
+    }
+  }
+
+  &__display {
+    font-size: rem-calc(30);
+    margin: 0;
+    min-height: rem-calc(70);
+    padding: 0;
+    border-right: 3px solid darken($cream, 10%);
+    
+    @include breakpoint(medium) {
+      font-size: rem-calc(50);
+    }
+  }
+
+  &__btn {
+    align-self: stretch;
+    @include border-radius(4%);
+  }
+}
+
+// DOM ELEMENT - your bookings
+
+.your-bookings {
+  border: 2px solid $primary-color;
+  border-radius: 2px;
+}
+

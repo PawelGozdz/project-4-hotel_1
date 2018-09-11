@@ -1,0 +1,33 @@
+
+<div class="{{page}}__container">
+
+  <h2>Bars</h2>
+
+  {{#each bar.bar}}
+  <div class="{{page}}__card">
+    <img src="{{src}}" alt="Hotel {{page}} picture">
+    <div class="details-card">
+      <span class="details-desc-1">Open from {{size}}</span>
+      <div class="details-div">
+        <p>{{purpose}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+  <h2>Restaurants</h2>
+
+  {{#each bar.restaurant}}
+  <div class="{{page}}__card">
+    <img src="{{src}}" alt="Hotel {{page}} picture">
+    <div class="details-card">
+      <span class="details-desc-1">Open all day</span>
+      <div class="details-div">
+        <p>{{purpose}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  
+  </div>
+  

@@ -1,0 +1,36 @@
+bar:
+  -
+    src: '../assets/img/small/bar-small-1.jpg'
+    purpose: 'Lounge'
+    size: '4PM'
+  -
+    src: '../assets/img/small/bar-small-2.jpg'
+    purpose: 'Nightclub'
+    size: '10PM'
+  -
+    src: '../assets/img/small/bar-small-3.jpg'
+    purpose: 'Soft'
+    size: '7AM'
+  -
+    src: '../assets/img/small/bar-small-4.jpg'
+    purpose: 'Late Evening'
+    size: '9PM'
+
+restaurant:
+  -
+    src: '../assets/img/small/restaurant-small-1.jpg'
+    purpose: 'Amazing Soups'
+    size: '120'
+  -
+    src: '../assets/img/small/restaurant-small-2.jpg'
+    purpose: 'Vegetarian'
+    size: '120'
+  -
+    src: '../assets/img/small/restaurant-small-3.jpg'
+    purpose: 'Chooce whatever you like'
+    size: '120'
+  -
+    src: '../assets/img/small/restaurant-small-4.jpg'
+    purpose: 'Great for dinner time'
+    size: '110'
+

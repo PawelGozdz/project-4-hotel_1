@@ -1,0 +1,76 @@
+
+<div class="{{page}}__container">
+
+  <h2>Banquets</h2>
+
+  {{#each meetings.banquets}}
+  <div class="{{page}}__card">
+    <img src="{{src}}" alt="Hotel {{page}} picture">
+    <div class="details-card">
+      <span class="details-desc-1">Up to {{size}} guests</span>
+      <div class="details-div">
+        <span>Cattering Included</span>
+        <p>Perfect for {{purpose}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+  <h2>Casino</h2>
+
+  {{#each meetings.casino}}
+  <div class="{{page}}__card">
+    <img src="{{src}}" alt="Hotel {{page}} picture">
+    <div class="details-card">
+      <span class="details-desc-1">Up to {{size}} guests</span>
+      <div class="details-div">
+        <span>Cattering Included</span>
+        <p>Try {{purpose}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  
+  <h2>Conferences</h2>
+  
+  {{#each meetings.conferences}}
+  <div class="{{page}}__card">
+    <img src="{{src}}" alt="Hotel {{page}} picture">
+    <div class="details-card">
+      <span class="details-desc-1">Up to {{size}} guests</span>
+      <div class="details-div">
+        <span>Event Planner Included</span>
+        <p>Try {{purpose}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+  <h2>Exhibitions</h2>
+  
+  {{#each meetings.exhibitions}}
+  <div class="{{page}}__card">
+    <img src="{{src}}" alt="Hotel {{page}} picture">
+    <div class="details-card">
+      <div class="details-div">
+        <span>Modern Art</span>
+        <p>{{purpose}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+  <h2>Weddings</h2>
+  
+  {{#each meetings.weddings}}
+  <div class="{{page}}__card">
+    <img src="{{src}}" alt="Hotel {{page}} picture">
+    <div class="details-card">
+      <div class="details-div">
+        <p>{{purpose}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  </div>
+  

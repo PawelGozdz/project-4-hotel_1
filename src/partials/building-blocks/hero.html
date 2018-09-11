@@ -1,0 +1,25 @@
+<div class="hero-full-screen">
+
+    <header class="hero-header">
+        <span>
+            <h1>{{h1-header}}</h1>
+            <span>{{sub_1}}</span>
+            <br>
+            <span>{{sub_2}}</span>
+        </span>
+        
+    </header>
+    
+
+    <div class="homepage-hero-module">
+      <div class="video-container">
+            {{#ifpage 'index'}}
+                <video class="video-content" autoplay muted loop>
+                    <source src="{{root}}/assets/img/MP4/{{vid-src}}.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    <source src="{{root}}/assets/img/WEBM/{{vid-src}}.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
+            {{/ifpage}}
+            <div class="poster poster-{{page}}"></div>
+        </div>
+    </div>
+</div>

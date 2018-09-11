@@ -1,0 +1,61 @@
+
+<div class="rooms__container">
+
+  <h2 class="rooms__big card-js">Large rooms (5-6)</h2>
+
+  {{#each rooms-data.big}}
+  <div class="rooms__{{room}} card-js rooms__big">
+    <div class="rooms--{{nr}}">
+      <img src="{{src}}" alt="Hotel Room-{{room}}">
+      <span class="rooms__off">Off £<span>{{offprice}}</span></span>
+      <div class="rooms__details">
+        <span class="rooms__bed"><span>{{size}}</span> bed</span>
+        <div class="rooms__price">
+          <span>£<span>{{per-night}}</span> per night</span>
+          <p>Only {{rooms-left}} rooms left at this price</p>
+        </div>
+      </div>
+      <button class="rooms__book-now">Book Now</button>
+    </div>
+  </div>
+  {{/each}}
+
+  <h2 class="rooms__medium card-js">Medium rooms (3-4)</h2>
+
+  {{#each rooms-data.medium}}
+  <div class="rooms__{{room}} card-js rooms__medium">
+    <div class="rooms--{{nr}}">
+      <img src="{{src}}" alt="Hotel Room-{{room}}">
+      <span class="rooms__off">Off £<span>{{offprice}}</span></span>
+      <div class="rooms__details">
+        <span class="rooms__bed"><span>{{size}}</span> bed</span>
+        <div class="rooms__price">
+          <span>£<span>{{per-night}}</span> per night</span>
+          <p>Only {{rooms-left}} rooms left at this price</p>
+        </div>
+      </div>
+      <button class="rooms__book-now">Book Now</button>
+    </div>
+  </div>
+  {{/each}}
+
+  <h2 class="rooms__small card-js">Small rooms (1-2)</h2>
+
+  {{#each rooms-data.small}}
+  <div class="rooms__{{room}} card-js rooms__small">
+    <div class="rooms--{{nr}}">
+      <img src="{{src}}" alt="Hotel Room-{{room}}">
+      <span class="rooms__off">Off £<span>{{offprice}}</span></span>
+      <div class="rooms__details">
+        <span class="rooms__bed"><span>{{size}}</span> bed</span>
+        <div class="rooms__price">
+          <span>£<span>{{per-night}}</span> per night</span>
+          <p>Only {{rooms-left}} rooms left at this price</p>
+        </div>
+      </div>
+      <button class="rooms__book-now">Book Now</button>
+    </div>
+  </div>
+  {{/each}}
+
+</div>

@@ -1,0 +1,73 @@
+.rooms {
+  margin-top: rem-calc(30);
+  &__container {
+
+    @include xy-grid-container;
+    @include xy-grid;
+
+    > * {
+      @include xy-cell(1/2);
+      
+
+      
+      @include breakpoint(large) {
+        @include xy-cell(1/4);
+
+      }
+      > div {
+        border-radius: 4px;
+        min-height: rem-calc(325);
+        box-shadow: 0 0 15px -3px rgba(0,0,0, .75);
+        background: $cream;
+        margin-bottom: rem-calc(20);
+        display: flex;
+        flex-direction: column;
+
+        @include position(relative);
+
+        img {
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          
+        }
+      }
+    }
+  }
+
+  h2 {
+    display: block;
+    width: 100%;
+    margin-bottom: rem-calc(20);
+
+    @include xy-cell();
+  }
+
+  &__off {
+    background: inherit;
+    width: rem-calc(70);
+    height: rem-calc(25);
+    padding: 1px 2px 1px;
+    letter-spacing: 1px;
+    border: 2px solid $primary-color;
+
+    @include font-bold;
+    @include position(absolute, 4, 0, 0, -.5);
+  }
+
+  &__details {
+    padding: rem-calc(5);
+  }
+
+  &__price {
+    span {
+      @include font-bold;
+    }
+  }
+
+  &__book-now {
+    margin-top: auto;
+    margin-bottom: rem-calc(20);
+    padding: 6px 0;
+    @extend .your-bookings;
+  }
+}

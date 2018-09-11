@@ -1,0 +1,80 @@
+.your-bookings {
+
+  &__container {
+
+    tbody tr td {
+      font-size: rem-calc(30);
+    }
+
+    tbody tr td:first-child {
+      width: 40%;      
+    } 
+
+    .desc {
+
+      > span {
+        display: block;
+      }
+    }
+    .including {
+      display: inline-block;
+    }
+    .final-price {
+      font-size: rem-calc(30);
+      background: rgba($cream, .9);
+      border-bottom: 1px solid $dark-gray;
+    }
+
+    .save {
+      font-size: rem-calc(14);
+      margin-top: 4px;
+      margin-bottom: 8px;
+      color: $alert-color;
+
+    }
+
+
+    .confirm {
+      @include xy-grid;
+      justify-content: space-around;
+      font-size: rem-calc(12);
+
+      > a {
+        border-radius: 2px;
+      }
+      
+      a {
+        color: $white;
+      }
+      
+      .add {
+        background: $success-color;
+        display: none;
+        
+        &:hover {
+          background: darken($success-color, 15%);
+        }
+      }
+      .remove {
+        background: $alert-color;
+        display: none;
+
+        &:hover {
+          background: darken($alert-color, 15%);
+        }
+      }
+      .new {
+        background: $primary-color;
+        display: block;
+        
+
+        &:hover {
+          background: darken($primary-color, 15%);
+        }
+      }
+    }
+        
+  }
+
+}
+
